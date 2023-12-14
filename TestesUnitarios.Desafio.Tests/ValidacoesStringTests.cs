@@ -6,37 +6,37 @@ public class ValidacoesStringTests
 {
     private ValidacoesString _validacoes = new ValidacoesString();
 
-[Fact]
-public void RetornarQuantidadeCaracteres()
-{
-    var texto = "Matrix";
-    var resultadoEsperado = 6;
+    [Fact]
+    public void RetornarQuantidadeCaracteres()
+    {
+        var texto = "Matrix";
+        var resultadoEsperado = 6;
 
-    var resultado = _validacoes.RetornarQuantidadeCaracteres(texto);
+        var resultado = _validacoes.RetornarQuantidadeCaracteres(texto);
 
-    Assert.Equal(resultadoEsperado, resultado);
-}
+        Assert.Equal(resultadoEsperado, resultado);
+    }
 
-[Fact]
-public void ContemCaractere()
-{
-    var texto = "Esse é um texto qualquer";
-    var textoProcurado = "qualquer";
+    [Fact]
+    public void ContemCaractere()
+    {
+        var texto = "Esse é um texto qualquer";
+        var textoProcurado = "qualquer";
 
-    var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
+        var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
-    Assert.True(resultado);
-}
+        Assert.True(resultado);
+    }
 
 
-[Fact]
-public void TextoTerminaCom()
-{
-    var texto = "Começo, meio e fim do texto procurado";
-    var textoProcurado = "procurado";
+    [Fact]
+    public void TextoTerminaCom()
+    {
+        var texto = "Começo, meio e fim do texto procurado";
+        var textoProcurado = "procurado";
 
-    var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
+        var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
 
-    Assert.True(resultado);
-}
+        Assert.True(resultado);
+    }
 }
